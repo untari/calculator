@@ -16,10 +16,11 @@ class Keypad extends Component {
                     <button className="3">3</button>&nbsp;
                     <button className="4">4</button>&nbsp;
                     <button className="5">5</button>&nbsp;
-                    <button className="6">7</button>&nbsp;
+                    <button className="6">6</button>&nbsp;
+                    <button className="7">7</button>&nbsp;
                     <button className="8">8</button>&nbsp;
-                    <button className="9">9</button>&nbsp;
-                    <button className="0">0</button>&nbsp;  &nbsp;
+                    <button className="9">9</button>&nbsp; 
+                    <button className="0">0</button>&nbsp; 
 
                     <button className="-">-</button>&nbsp;
                     <button className="*">*</button>&nbsp;
