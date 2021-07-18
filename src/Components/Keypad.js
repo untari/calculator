@@ -4,28 +4,34 @@ import '../App.css';
 class Keypad extends Component {
     render(){
         return(
-            <div className="button-keypad">
-    
-                    <button className="c">C</button>&nbsp;
-                    <button className=".">CE</button>&nbsp;
-                    <button className="%">%</button>&nbsp;
-                    <button className="+">+</button>&nbsp;
+            <div  className="button-keypad">
+                <button name="(" onClick={e => this.props.onClick(e.target.name)}>(</button>&nbsp;
+                <button name="CE" onClick={e => this.props.onClick(e.target.name)}>CE</button>&nbsp;
+                <button name=")" onClick={e => this.props.onClick(e.target.name)}>)</button>&nbsp;
+                <button name="C" onClick={e => this.props.onClick(e.target.name)}> C </button> <br/>
 
-                    <button className="1">1</button>&nbsp;
-                    <button className="2">2</button>&nbsp;
-                    <button className="3">3</button>&nbsp;
-                    <button className="4">4</button>&nbsp;
-                    <button className="5">5</button>&nbsp;
-                    <button className="6">6</button>&nbsp;
-                    <button className="7">7</button>&nbsp;
-                    <button className="8">8</button>&nbsp;
-                    <button className="9">9</button>&nbsp; 
-                    <button className="0">0</button>&nbsp; 
 
-                    <button className="-">-</button>&nbsp;
-                    <button className="*">*</button>&nbsp;
-                    <button className="÷">÷</button>&nbsp;
-                    <button className="=">=</button>&nbsp;
+                <button name="1" onClick={e => this.props.onClick(e.target.name)}>1</button>&nbsp;
+                <button name="2" onClick={e => this.props.onClick(e.target.name)}>2</button>&nbsp;
+                <button name="3" onClick={e => this.props.onClick(e.target.name)}>3</button>&nbsp;
+                <button name="+" onClick={e => this.props.onClick(e.target.name)}>+</button> <br/>
+
+
+                <button name="4" onClick={e => this.props.onClick(e.target.name)}>4</button>&nbsp;
+                <button name="5" onClick={e => this.props.onClick(e.target.name)}>5</button>&nbsp;
+                <button name="6" onClick={e => this.props.onClick(e.target.name)}>6</button>&nbsp;
+                <button name="-" onClick={e => this.props.onClick(e.target.name)}>-</button>  <br/>
+
+                <button name="7" onClick={e => this.props.onClick(e.target.name)}>7</button>&nbsp;
+                <button name="8" onClick={e => this.props.onClick(e.target.name)}>8</button>&nbsp;
+                <button name="9" onClick={e => this.props.onClick(e.target.name)}>9</button>&nbsp;
+                <button name="*" onClick={e => this.props.onClick(e.target.name)}>x</button> <br/>
+
+
+                <button name="." onClick={e => this.props.onClick(e.target.name)}>.</button>&nbsp;
+                <button name="0" onClick={e => this.props.onClick(e.target.name)}>0</button>&nbsp;
+                <button name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>&nbsp;
+                <button name="/" onClick={e => this.props.onClick(e.target.name)}>÷</button> <br/>
             </div>
         );
     }
